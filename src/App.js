@@ -18,7 +18,8 @@ const App = () => {
   };
 
   useEffect(() => {
-    const news = fetchNoticias();
+    console.log(process.env.REACT_APP_NEW_API_KEY);
+  fetchNoticias();
   }, [categoria]);
 
   const getCategoria = categoria => {
